@@ -1,0 +1,214 @@
+
+
+body
+{
+    background-color: rgb(244, 248, 250) ;
+    font-family: 'Lato', sans-serif;
+}
+
+#container
+{
+    margin: 20px 45px 45px 45px;
+
+}
+
+a
+{
+    text-decoration: none ;
+}
+
+#logo
+{
+display: flex;
+justify-content: center;
+margin: 0px;
+}
+
+#navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(232, 242, 247);
+    height: 50px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+.option
+{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    color: white;
+}
+
+
+
+#promo a img
+{
+    max-width: 50%;
+    height: 400px;
+}
+
+
+#promo a
+{
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: center;
+    background-color: rgb(187, 222, 255);
+    color: rgb(2, 19, 92) ;
+    font-weight: 700;
+    padding: 20px ;
+    line-height: 30px;
+}
+
+#promo h1
+{
+    margin-left: 20px;
+}
+
+#promo h1 b
+{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#recommend-box
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: (232, 242, 247);
+}
+
+#recommend-title
+{
+    display: flex ;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(2, 19, 92);
+    color: white;
+    width: 3800px;
+    height: auto;
+    margin-top: 10px;
+    clear: both;
+}
+
+.recommend
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+    padding: 20px 20px 20px 20px;
+    transition: all 300ms ease;
+    animation: ease-in;
+    transform: scale(1, 1);
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.recommend h3
+{
+    color: blue;
+    margin-top: 0px;
+    margin-bottom: 5px; 
+}
+
+.recommend h4
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 10px;
+    line-height: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 700; 
+}
+
+.promo-label
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding: 0px;
+}
+
+.promo-label h5
+{
+    background-color: rgb(2, 19, 92) ;
+    color: white;
+    height: 20px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+}
+
+p
+{
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.recommend:hover
+{
+    background-color: rgb(220, 222, 253);
+    opacity: 90%;
+    transform: scale(1.1, 1.1);
+    
+}
+
+#footer
+{
+    display: flex;
+    flex-direction: row;
+    background-color:  rgb(232, 242, 247);
+    color: white;
+    justify-content: center;
+    color: black;
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 10px;
+}
+@media all and ( max-width: 1000px) {
+    #promo a
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+    #promo a img
+{
+    max-width: 100%;
+}
+}
+
+@media all and (max-width: 564px) {
+    #logo img
+    {
+        max-width: 200px;
+        max-height: 100px;
+
+    }
+    #navbar {
+        height: 60px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .option {
+        margin: 5px;
+    }
+    #promo a img
+    {
+        max-height: 200px;
+    }
+  }

@@ -1,0 +1,207 @@
+body
+{
+    background-color: rgb(244, 248, 250) ;
+    font-family: 'Lato', sans-serif;
+}
+
+#container
+{
+    margin: 20px 45px 45px 45px;
+
+}
+
+a
+{
+    text-decoration: none ;
+}
+
+#logo
+{
+display: flex;
+justify-content: center;
+margin: 0px;
+}
+
+#navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(232, 242, 247);
+    height: 50px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.option
+{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    color: white;
+}
+
+
+#sidebar
+{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 20px;
+    margin-right:10px ;
+    padding: 20px;
+    background-color: rgb(232, 242, 247);
+    width: 200px;
+}
+
+.filters
+{
+    background-color: rgb(2, 19, 92);
+    color: white;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.filters h2
+{
+    margin: 10px;
+}
+
+.offer-title
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 19, 92);
+    color: white;
+    height: 40px;
+    padding: 10px;
+}
+
+.offer-title h1
+{
+    margin:0px 0px 0px 0px;
+}
+
+#content
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(232, 242, 247);
+    margin-top: 20px;
+    padding: 10px 20px ;
+}
+
+.offer
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    float: left;
+    padding: 10px;
+    transition: all 300ms ease;
+    animation: ease-in;
+    transform: scale(1, 1);
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+
+.offer:hover
+{
+    background-color: rgb(220, 222, 253);
+    opacity: 90%;
+    transform: scale(1.1, 1.1);
+    
+}
+
+.offer h3
+{
+    color: blue;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+.offer h4
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 10px;
+    line-height: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 700; 
+}
+
+.promo-label
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding: 0px;
+}
+
+.promo-label h5
+{
+    background-color: rgb(2, 19, 92) ;
+    color: white;
+    height: 20px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+}
+
+p
+{
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+#footer
+{
+    display: flex;
+    flex-direction: row;
+    background-color:  rgb(232, 242, 247);
+    color: white;
+    justify-content: center;
+    color: black;
+    margin-top: 20px;
+    font-size: 13px;
+}
+@media all and (max-width: 690px) { 
+    #sidebar
+    {
+        width: 290px;
+        margin-bottom: 20px;
+    }
+    #content
+    {
+        justify-content: center;
+        clear: both;
+        margin-top: 20px;
+        padding: 20px;
+    }
+  }
+@media all and (max-width: 564px){
+    #logo img
+    {
+        max-width: 200px;
+        max-height: 100px;
+
+    }
+    #navbar {
+        height: 60px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .option {
+        margin: 5px;
+    }

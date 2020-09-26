@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wyprzedaż - Bike Shop</title>
+    <link rel="stylesheet" href="style-sale.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="logo">
+            <a href="Bike-shop-main-page.html"><img src="bike-logo.png" alt="Logo" width="400px" height="200px"></a>
+        </div>
+        <div id="navbar">
+            <div class="option">
+                <a href="Bike-shop-main-page.html">Strona Główna</a>
+            </div>
+            <div class="option">
+                <a href="Bike-shop-bikes.html">Rowery</a>
+            </div>
+            <div class="option">
+                <a href="Bike-shop-accessories.html">Akcesoria</a>
+            </div>
+            <div class="option">
+                <a href="Bike-shop-sale.html">Wyprzedaż</a>
+            </div>
+        </div> <!-- div navbar-->
+        <div class="offer-title">
+             <h1>WYPRZEDAŻ</h1>   
+            </div>
+        <div id="sidebar">
+            <div class="filters"><h2>Filtry</h2></div>
+            <div id="price">
+                <h3>Cena</h3>
+                <form action="price" method="GET" class="price" >
+                    <label for="minprice">Od</label>
+                    <br>
+                    <input type="number" name="minprice" id="minprice" min="1">
+                    </div>
+                    <div class="price">
+                    <label for="maxprice">Do</label>
+                    <br>
+                    <input type="number" name="maxprice" id="maxprice" min="1">
+                </form>
+                <div id="biketype"></div>
+                <h3>Kategorie</h3>
+                <form action="typeaccessories" method="GET" class="typeaccessories">
+                    <input type="checkbox" name="bikes" id="bikes">
+                    <label for="bikes">Rowery </label>
+                    <br>
+                    <input type="checkbox" name="accessories" id="accessories">
+                    <label for="accessories">Akcesoria</label>          
+                </form>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="offer">
+                <img src="bike9.jpg" alt="Polecamy" width="240px" height="200px">
+                <div class="promo-label">
+                    <h5>-14%</h5>
+                    <p>2559zł</p>
+                </div>
+                <h3>2189zł</h3>
+                <h4>Rower KROSS Hexagon 1.0</h4>
+            </div>
+            <div class="offer">
+                <img src="bike10.jpg" alt="Polecamy" width="240px" height="200px">
+                <div class="promo-label">
+                    <h5>-24%</h5>
+                    <p>2499zł</p>
+                </div>
+                <h3>1899zł</h3>
+                <h4>Rower ORBEA MX 50</h4>
+            </div>
+            <div class="offer">
+                <img src="bike11.jpg" alt="Polecamy" width="240px" height="200px">
+                <div class="promo-label">
+                    <h5>-34%</h5>
+                    <p>2899zł</p>
+                </div>
+                <h3>1899zł</h3>
+                <h4>Rower KROSS ProCity X</h4>
+            </div>
+            <div class="offer">
+                <img src="bike12.jpg" alt="Polecamy" width="240px" height="200px">
+                <div class="promo-label">
+                    <h5>-50%</h5>
+                    <p>2999zł</p>
+                </div>
+                <h3>1499zł</h3>
+                <h4>Rower ROMET Mustang M2</h4>
+            </div>
+            <div class="offer">
+                <img src="accessory1.jpg" alt="Oferta 1" width="240px" height="200px">
+                <div class="promo-label">
+                    <h5>-43%</h5>
+                    <p>69zł</p>
+                </div>
+                <h3>39zł</h3>
+                <h4>Apteczka DEUTER First Aid</h4>
+            </div>
+        </div> <!--div kontentu -->
+
+        <div style="clear: both; "id="footer">
+            <h4>R2 BIKE, Kraków, 12-345 ul. 3 Maja 128, Nr tel: (+48) 123-456-789</h4>
+        </div>
+    </div> <!--div kontenera -->
+
+</body>
+<html>
